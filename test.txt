@@ -1,0 +1,3 @@
+pnpm dlx shadcn@latest add https://21st.dev/r/originui/use-image-upload
+pnpm dlx shadcn@latest add https://21st.dev/r/ashishrajwaniai01/balloons-pop-background
+pnpm dlx shadcn@latest add https://21st.dev/r/preetsuthar17/modern-stunning-sign-in
