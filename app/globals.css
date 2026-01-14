@@ -119,7 +119,40 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0, 0, 0, 0.37)];
+  }
+
+  .glass-dark {
+    @apply bg-black/40 backdrop-blur-2xl border border-white/5 shadow-2xl;
+  }
+
+  .glow-primary {
+    @apply shadow-[0_0_20px_rgba(var(--primary), 0.3)];
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px currentColor;
+  }
+
+  .animate-slow-spin {
+    animation: rotate 20s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
